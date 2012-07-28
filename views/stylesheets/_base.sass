@@ -1,7 +1,9 @@
 body
-  background: #eeeeef
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif
-  font-size: 16px
+  background: #eeeeef url('bg.jpg') no-repeat top
+  background-size: cover
+  background-attachment: fixed
+  font-family: $sans
+  font-size: 100%
   line-height: 1.5em
 
 h1
@@ -13,7 +15,7 @@ h2
   line-height: 1.5em
   margin: 0 0 $small-gap 0
   a
-    +link-colors($black, $red)
+    +link-colors($bruiiin, $red)
 
 h3
   font-size: 20px
@@ -31,9 +33,12 @@ h1, h2, h3, h4, h5, h6
 p
   color: $black
   margin: 0 0 0.5em 0
+  font-size: 1em
+  line-height: 1.8em
+  font-family: $sans
 
 a
-  +link-colors($blue, $red)
+  +link-colors($bruiiin, $red)
   +hover-link
 
 strong
@@ -46,3 +51,15 @@ em
 hr
   border: 0 none
   border-bottom: $sidebar-border
+
+img
+  border: 3px solid $warm-gray
+
++small-screen
+  body
+    font-size: 0.9em
+
+  h1
+    font-size: 20px
+  h2
+    font-size: 15px

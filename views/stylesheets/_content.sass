@@ -1,8 +1,9 @@
 .content
-
+  background: url(content-bg.png)
   p
     color: $black
     text-align: justify
+    font-family: $serif
 
     &.read_more
       text-align: right
@@ -15,16 +16,20 @@
 
   h1, h2, h3, h4, h5, h6
     border-bottom: $sidebar-border
+    color: $bruiiin
 
   ul
     list-style: disc outside
     margin: $small-gap
-    margin-left: $big-gap
+    margin-left: $small-gap
+    list-style-type: none
   ol
     list-style: decimal outside
     margin: $big-gap
   li
-    color: $cool-gray
+    color: darken($warm-gray, 20%)
+    font-family: $serif
+
     pre
       display: block
       width: auto !important
@@ -44,8 +49,9 @@
     min-height: 100px
     h1
       a
-        color: $black
-
+        color: $bruiiin
+      a:hover
+        color: lighten($bruiiin, 20%)
     h2
       border-bottom: $sidebar-border
     p.summary a

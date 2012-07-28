@@ -2,7 +2,7 @@ class Disqus
 
   def self.id(id, wp)
     if wp
-      "#{wp} http://iain.nl/?p=#{wp}"
+      "#{wp} http://peterderuijter.com/?p=#{wp}"
     else
       id
     end

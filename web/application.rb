@@ -31,7 +31,7 @@ before do
   no_www!
   no_dates!
   no_trailing_slashes!
-  @description = "Adventures with Ruby is a blog about developing with Ruby and Ruby on Rails, written by Iain Hecker."
+  @description = "This is a blog of all things cool. You know. ;)"
 end
 
 get '/' do
@@ -47,7 +47,7 @@ end
 
 get '/articles' do
   static
-  @title = "All articles on Adventures with Ruby"
+  @title = "All articles"
   @intro = :archive_intro
   slim :archive
 end
@@ -56,7 +56,7 @@ get '/:article' do
   @article = Index.find(params[:article])
   if @article.found?
     static
-    @title       = "#{@article.title} - Adventures with Ruby"
+    @title       = "#{@article.title} - Space, hacks and retardation"
     @description = @article.summary
     @intro       = :article_intro
     slim :article

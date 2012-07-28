@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.8)
+    bourbon (2.1.1)
+      sass (>= 3.1)
     builder (3.0.0)
     chunky_png (1.2.5)
     compass (0.12.1)
@@ -69,6 +71,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   builder
   compass
   guard-rspec

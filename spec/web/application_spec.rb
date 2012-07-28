@@ -12,7 +12,7 @@ describe "application" do
     it { should be_ok }
     describe "body" do
       subject { last_response.body }
-      it { should have_text("Want more?") }
+      it { should have_text("Are you interested in more?") }
       it { should have_link("See the rest of the articles").to("/articles") }
     end
   end

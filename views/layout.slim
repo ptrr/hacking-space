@@ -3,7 +3,7 @@ html
 
   head
 
-    title= @title || 'Adventures with Ruby'
+    title= @title || 'Space, hacks and retardation'
 
     meta charset='UTF-8'
     meta name='description' content=@description
@@ -12,6 +12,7 @@ html
     link rel='stylesheet'    href='/stylesheet.css' 
     link rel='shortcut icon' href='/favicon.png'    
     link rel='alternate'     href='/feed' type='application/rss+xml' title='RSS Feed'
+    link href='http://fonts.googleapis.com/css?family=Alike|Open+Sans' rel='stylesheet' type='text/css'
 
     /[if lt IE 9]
       script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'
@@ -22,6 +23,7 @@ html
         header== partial :header
         section.content== yield
       section.sidebar== partial :sidebar
-      footer.copyright== partial :footer
+      footer
+        .copyright== partial :footer
 
     == erb :_javascript

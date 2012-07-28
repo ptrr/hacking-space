@@ -2,7 +2,7 @@ body
   margin: 0
   padding: 0
 
-.content, .sidebar
+.content
   padding: $big-gap
 
 .copyright
@@ -23,9 +23,24 @@ body
     float: left
 
   .sidebar
-    width: $side-width
-    float: left
-    margin-top: 200px
+    +border-top-right-radius(4px)
+    width: $side-width - $big-gap
+    float: right
+    +box-shadow
+    .about
+      background: #EAEAEA
+      padding: $big-gap
+      +border-radius(4px)
+      p
+        span.red
+          color: $red
+        span.blue
+          color: $blue
+
+    .title
+      +border-top-radius(4px)
+      background: darken($blue, 10%)
+      height: 106px
 
   .copyright
     width: $main-width
@@ -34,4 +49,14 @@ body
 +small-screen
 
   .container
-    margin: $big-gap
+    margin: $small-gap
+
+  .sidebar
+    background: #fff
+    margin-top: 10px
+    +border-radius(4px)
+    +box-shadow
+    +border-radius(4px)
+    padding: 8px 20px
+    h3
+      margin: 0

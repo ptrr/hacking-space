@@ -1,8 +1,8 @@
 xml.instruct!
 xml.rss version: "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
   xml.channel do
-    xml.title "Adventures with Ruby"
-    xml.description "Article feed of Adventures with Ruby"
+    xml.title "Space, hacks and retardation"
+    xml.description "Article feed of Space, hacks and retardation"
     xml.link "#{request.scheme}://#{request.host}"
     xml.pubDate CGI.rfc1123_date(@archive.first.published_at.to_time)
     archive.each do |article|
