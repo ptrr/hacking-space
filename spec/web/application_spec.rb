@@ -12,8 +12,8 @@ describe "application" do
     it { should be_ok }
     describe "body" do
       subject { last_response.body }
-      it { should have_text("Blog") }
-      it { should have_link("Blog").to("/blog") }
+      it { should have_text("Latest blog entry") }
+      it { should have_link("Latest blog entry").to("/blog") }
     end
   end
 

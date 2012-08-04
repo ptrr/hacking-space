@@ -2,7 +2,7 @@
 
 *So, when I'm not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.*
 
-<!--more-->
+<!-- INTRODUCTION STOPS HERE -->
 
 ## Binary Universes
 

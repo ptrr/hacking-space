@@ -1,6 +1,6 @@
 article.summary
   span.meta.publish_date
-  == partial :time, :article  => article unless home
+  == partial :time, :article  => article if home
   == partial :title, :article => article, home: home
 
   == content
