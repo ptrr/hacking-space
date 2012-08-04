@@ -1,34 +1,33 @@
 .content
-  background: url(content-bg.png)
   p
-    color: $black
-    text-align: justify
     font-family: $serif
-
     &.read_more
       text-align: right
       a
         +inline-block
         padding: $small-gap 0 $small-gap $small-gap
         margin-bottom: $big-gap
-        +link-colors($warm-gray, $red)
+        +link-colors($black, $red)
         text-decoration: none
+        font-family: $heading
+
 
   h1, h2, h3, h4, h5, h6
-    border-bottom: $sidebar-border
-    color: $bruiiin
+    
 
   ul
     list-style: disc outside
     margin: $small-gap
     margin-left: $small-gap
     list-style-type: none
+    font-size: 1.2em
   ol
     list-style: decimal outside
     margin: $big-gap
   li
     color: darken($warm-gray, 20%)
     font-family: $serif
+    margin-bottom: 10px
 
     pre
       display: block
@@ -46,15 +45,28 @@
       color: $warm-gray
 
   article
+    em
+      font-weight: bold
+      font-style: normal
+      font-size: 1.125em
+    &.summary
+      em
+        font-style: normal
+        font-size: 1em
+        font-weight: normal
     min-height: 100px
     h1
-      a
-        color: $bruiiin
-      a:hover
-        color: lighten($bruiiin, 20%)
+      font-size: 2em!important
     h2
-      border-bottom: $sidebar-border
-    p.summary a
-      color: $black
-      text-decoration: none
-      display: block
+      font-size: 1.5em
+      line-height: 1.143em
+      letter-spacing: 2px
+      text-align: center
+
+    p.summary 
+      a
+        color: $black
+        text-decoration: none
+        display: block
+
+

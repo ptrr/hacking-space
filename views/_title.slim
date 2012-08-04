@@ -1,2 +1,7 @@
-h2
-  a(href=article.url)= article.title
+- if home
+  h2
+    a(href=article.url)= article.title
+- else
+  h2.section_separator
+    a(href=article.url)= article.title
+

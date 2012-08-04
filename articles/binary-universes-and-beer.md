@@ -1,13 +1,12 @@
-{% img center space.png %}
+![Alt text](/space.png)
 
-<img src="/space.png" width="100%">
-So, when I'm not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.
+*So, when I'm not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.*
 
 <!--more-->
 
 ## Binary Universes
 
-Within physics they like to look at the very big and the very small. They are kind of obsessed with it. They look at galaxies smashing together whilst they also like to look at tiny particles, protons, smash together and that's where the Large Hadron Collider comes in. You might have heard of it. As I don't have much faith in humanity sometimes, the sheer size and complexity of the LHC gives me a little hope in humanities ingeniuity.  
+Within physics they like to look at the very big and the very small. Physicists are kind of obsessed with it. They look at galaxies smashing together whilst they also like to look at tiny particles, protons, smash together and that's where the Large Hadron Collider comes in. You might have heard of it. As I don't have much faith in humanity sometimes, the sheer size and complexity of the LHC gives me a little hope in humanities ingeniuity.  
 
 For those of you who don't know what happens in the LHC; they are smashing tiny particles together at near the speed of light to find out what they are made of in essence. Physicists are very keen on finding the so called Higgs particle or Higgs Boson particle. A particle of a field called the higgs field which physicists think gives the particles around us their mass. 
 

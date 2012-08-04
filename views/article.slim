@@ -2,7 +2,7 @@ article
 
   == partial :notice, article: @article
 
-  h1
+  h1.section_separator
     a(href=@article.url id=@article.id rel='bookmark')= @article.title
 
   == @article.contents.html

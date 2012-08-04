@@ -1,7 +1,17 @@
-== articles :introduction, archive.take(5)
+section.about== partial :about
 
-h2 Are you interested in more?
+section.blog
+  h1.section_separator
+    a href='/blog' Blog
 
-p
-  a(href='/articles') See the rest of the articles
-  |.
+  == articles :introduction, archive.take(3), :home => true
+
+  h4 More?
+  p
+    a(href='/articles') See the rest of the articles.
+section.projects
+  h2.section_separator
+    span W.I.P.
+  p
+    ' I am generally a busy guy. I always find some project or undertaking to keep me busy. Not only programming, also music and crafting. ;)
+    a(href='/projects') Here you can find what these are.

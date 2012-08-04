@@ -1,9 +1,8 @@
 --- 
 html: |
-  <p>{% img center space.png %}</p>
+  <p><img src="/space.png" alt="Alt text"></p>
   
-  <p><img src="/space.png" width="100%">
-  So, when I&#39;m not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.</p>
+  <p><em>So, when I&#39;m not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.</em></p>
   
   <!--more-->
   
@@ -60,7 +59,6 @@ toc:
 - anchor: "#toc_1"
   title: Beer
 introduction: |
-  <p>{% img center space.png %}</p><p><img src="/space.png" width="100%">
-  So, when I&#39;m not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.</p>
+  <p><em>So, when I&#39;m not programming or playing the piano or gaming you probably find me reading or drinking beer. And primarily reading physics stuff and drinking belgian beer. Here is some of my findings.</em></p>
   <!--more-->
 

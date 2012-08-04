@@ -14,7 +14,7 @@ xml.rss version: "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
           xml.cdata! article.contents.html
         end
         xml.guid    "#{request.scheme}://#{request.host}#{article.url}"
-        xml.author  "iain@iain.nl (iain hecker)"
+        xml.author  "peter@omnidimensional.net (Peter de Ruijter)"
       end
     end
   end

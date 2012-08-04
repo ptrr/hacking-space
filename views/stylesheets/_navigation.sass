@@ -1,0 +1,173 @@
+#navi
+  +big-screen
+    position: absolute
+    right: $big-gap
+    top: $big-gap
+    max-width: 400px
+    min-width: 200px
+    color: $light-gray
+    a
+      margin: $small-gap
+      background: $black
+      color: white
+      +border-radius(3px)
+      display: block
+      min-width: 90px
+      max-width: 110px
+      float: left
+      padding: $small-gap
+      position: relative
+      border: 1px solid black
+
+      &.next
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:after
+          position: absolute
+          right: 5px
+          content: "\2192"
+
+        text-align: left
+      &.prev
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:before
+          position: absolute
+          left: 5px
+          content: "\2190"
+        text-align: right
+  +small-screen
+    margin: 0 auto
+    min-width: 100%
+    max-width: 100%
+    clear: both
+    height: 30px
+    a
+      margin: $small-gap
+      background: $black
+      color: white
+      +border-radius(3px)
+      display: block
+      min-width: 43%
+      padding: $small-gap
+      position: relative
+      border: 1px solid black
+
+      &.next
+        float: right
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:after
+          position: absolute
+          right: 5px
+          content: "\2192"
+
+        text-align: left
+      &.prev
+        float: left
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:before
+          position: absolute
+          left: 5px
+          content: "\2190"
+        text-align: right
+
+#navi.bottom
+  +big-screen
+    position: absolute
+    right: $big-gap
+    bottom: $big-gap
+    max-width: 400px
+    min-width: 200px
+    color: $light-gray
+    a
+      margin: $small-gap
+      background: $black
+      color: white
+      +border-radius(3px)
+      display: block
+      min-width: 90px
+      max-width: 110px
+      float: left
+      padding: $small-gap
+      position: relative
+      border: 1px solid black
+
+      &.next
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:after
+          position: absolute
+          right: 5px
+          content: "\2192"
+
+        text-align: left
+      &.prev
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:before
+          position: absolute
+          left: 5px
+          content: "\2190"
+        text-align: right
+  +small-screen
+    margin: 0 auto
+    min-width: 100%
+    max-width: 100%
+    clear: both
+    height: 30px
+    a
+      margin: $small-gap
+      background: $black
+      color: white
+      +border-radius(3px)
+      display: block
+      min-width: 43%
+      padding: $small-gap
+      position: relative
+      border: 1px solid black
+
+      &.next
+        float: right
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:after
+          position: absolute
+          right: 5px
+          content: "\2192"
+
+        text-align: left
+      &.prev
+        float: left
+        &:hover
+          background: $light-gray
+          border: 1px $black dashed
+          color: $red
+          text-decoration: none
+        &:before
+          position: absolute
+          left: 5px
+          content: "\2190"
+        text-align: right

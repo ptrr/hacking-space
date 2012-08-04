@@ -22,25 +22,11 @@ body
     width: $main-width
     float: left
 
-  .sidebar
-    +border-top-right-radius(4px)
-    width: $side-width - $big-gap
-    float: right
-    +box-shadow
-    .about
-      background: #EAEAEA
-      padding: $big-gap
-      +border-radius(4px)
-      p
-        span.red
-          color: $red
-        span.blue
-          color: $blue
+  .about
+    clear: both
 
-    .title
-      +border-top-radius(4px)
-      background: darken($blue, 10%)
-      height: 106px
+  .blog
+    clear: both
 
   .copyright
     width: $main-width
@@ -52,11 +38,6 @@ body
     margin: $small-gap
 
   .sidebar
-    background: #fff
-    margin-top: 10px
-    +border-radius(4px)
-    +box-shadow
-    +border-radius(4px)
     padding: 8px 20px
     h3
       margin: 0

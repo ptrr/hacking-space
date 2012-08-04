@@ -1,10 +1,44 @@
 body
-  background: #eeeeef url('bg.jpg') no-repeat top
+  background: $light-gray
   background-size: cover
   background-attachment: fixed
-  font-family: $sans
   font-size: 100%
   line-height: 1.5em
+  border-top: solid $black 0.3em
+
+.section_separator
+  position: relative
+  overflow: hidden
+  font-size: 1.30pxem
+  line-height: 1.143em
+  margin: 0 0 1.524em 0
+  text-align: center
+  text-transform: lowercase
+
+.section_separator a, .section_separator span 
+  display: inline-block
+  position: relative
+  z-index: 1
+  background-color: #FDFDFD
+  text-decoration: none
+  padding: 0 10px
+
+.section_separator::before, .section_separator .before
+  position: absolute
+  top: 0
+  color: #666!important
+  left: 0px
+  z-index: -1
+  overflow: visible
+  text-decoration: none !important
+  color: #111
+  text-transform: lowercase
+  font-size: 1em
+  letter-spacing: -1px
+  content: "\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014"
+  font-size: 5px
+
+
 
 h1
   font-size: 30px
@@ -15,7 +49,7 @@ h2
   line-height: 1.5em
   margin: 0 0 $small-gap 0
   a
-    +link-colors($bruiiin, $red)
+    +link-colors($black, $red)
 
 h3
   font-size: 20px
@@ -28,17 +62,20 @@ h1, h2, h3, h4, h5, h6
   margin: 1.5em 0 0.5em 0
   padding: 0
   color: $black
-  font-weight: normal
+  font-family: $heading
 
 p
   color: $black
   margin: 0 0 0.5em 0
-  font-size: 1em
+  font-size: 1.2em
   line-height: 1.8em
-  font-family: $sans
+  text-align: justify
+  font-family: $serif
+  a
+    text-decoration: underline
 
 a
-  +link-colors($bruiiin, $red)
+  +link-colors($black, $red)
   +hover-link
 
 strong
@@ -53,13 +90,30 @@ hr
   border-bottom: $sidebar-border
 
 img
-  border: 3px solid $warm-gray
+  border: 3px solid $black
+  max-width: 100%
+  display: block
+
+  &.left
+    display: block
+    float: left
+
+  &.right
+    display: block
+    float: right
+
+  &.wrap
+    display: inline 
 
 +small-screen
   body
-    font-size: 0.9em
+    font-size: 1em
 
   h1
     font-size: 20px
   h2
     font-size: 15px
+
+  p
+    text-indent: 0
+    padding-bottom: 1em

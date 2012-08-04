@@ -4,10 +4,10 @@ module Helpers
     slim :"_#{name}", options, locals
   end
 
-  def articles(name, articles)
+  def articles(name, articles, home=false)
     html = ""
     articles.each do |article|
-      html << partial(:article, article: article, content: partial(name, article: article))
+      html << partial(:article, home: home, article: article, content: partial(name, article: article))
     end
     html
   end
@@ -63,6 +63,10 @@ module Helpers
 
   def redirect_code
     local? ? 302 : 301
+  end
+
+  def navigate navigation
+    @navigation ||= Navigation.new(navigation)
   end
 
 end

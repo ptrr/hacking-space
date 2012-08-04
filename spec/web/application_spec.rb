@@ -41,7 +41,6 @@ describe "application" do
 
   describe "/feed" do
     before { get "/feed" }
-    it "renders the RSS feed"
   end
 
   describe "/stylesheet.css" do

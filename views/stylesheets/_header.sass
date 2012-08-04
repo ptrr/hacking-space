@@ -1,35 +1,33 @@
-header
-  background: $blue url(header-bg.png)
-  @include background-image(linear-gradient(darken($blue, 9%), $blue))
+header 
   +border-top-radius(4px)
   padding-bottom: 20px
-  border-bottom: 1px solid darken($blue, 10%)
   .blog-title
+    font-family: $heading
+    text-align: center
     height: 1.5em
-    font-size: 1.5em
+    font-size: 3em
     line-height: 2em
     padding: 10px $big-gap
-    
     a
-      color: white
+      color: $black
       text-decoration: none
-      +embossed
 
   h2
     margin: 0
     padding: 0 $big-gap
     font-size: 20px
     line-height: 1.5em
-    font-family: $serif
-    font-style: italic
-    color: lighten($blue, 50%)
-    +embossed
-
+    font-family: $heading
+    font-style: normal
+    font-weight: normal
+    text-align: center
+    
     strong
       color: $black
       font-weight: bold
   +small-screen
     .blog-title
+      clear: both
       font-size: 1.4em
       padding-bottom: 10px
     h2

@@ -14,6 +14,7 @@ require 'contents_storage'
 require 'disqus'
 require 'contents'
 require 'archive'
+require 'navigation'
 require 'helpers'
 
 include Helpers
@@ -37,7 +38,12 @@ end
 get '/' do
   static
   @intro = :index_intro
+  @nav = navigate('home')
   slim :index
+end
+
+get '/home' do
+  redirect '/'
 end
 
 get '/feed' do
@@ -47,12 +53,34 @@ end
 
 get '/articles' do
   static
-  @title = "All articles"
+  @title = ""
   @intro = :archive_intro
+  @nav = navigate('blog')
   slim :archive
 end
 
+get '/contact' do
+  static
+  @nav = navigate('contact')
+  slim :contact
+end
+
+get '/blog' do
+  static
+  @title = "All articles"
+  @intro = :archive_intro
+  @nav = navigate('blog')
+  slim :archive
+end
+
+get '/about' do
+  static
+  @nav = navigate('about')
+  slim :about
+end
+
 get '/:article' do
+  @nav = navigate('blog')
   @article = Index.find(params[:article])
   if @article.found?
     static
@@ -71,8 +99,17 @@ get "/stylesheet.css" do
   sass :"stylesheets/application"
 end
 
+get "/projects" do
+  static
+  @nav = navigate('projects')
+  @title = "My projects and wips"
+  @intro = :projects_intro
+  slim :projects
+end
+
 not_found do
   static "NOTFOUND"
   @intro = :not_found_intro
+  @nav = navigate("not-found")
   slim :not_found
 end
