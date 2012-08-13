@@ -9,7 +9,7 @@ class Navigation
   def find_next current
     index = @hierarchy.index(current).to_i
     if index >= @hierarchy.count - 1
-      return nil
+      return 
     else
       return @hierarchy[index + 1]
     end
