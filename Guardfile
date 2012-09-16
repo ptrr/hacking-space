@@ -24,4 +24,4 @@ guard 'rspec', :version => 2, :cli => "--tag ~slow" do
   watch(%r{^web/(.+)\.rb$}) { |m| "spec/web/#{m[1]}_spec.rb" }
 end
 
-guard 'shotgun', :port => 3000
+guard 'shotgun', :port => 4000

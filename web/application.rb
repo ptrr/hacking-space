@@ -46,6 +46,15 @@ get '/home' do
   redirect '/'
 end
 
+get "/projects" do
+  @nav = navigate('projects')
+  static
+  @title = "My projects and wips"
+  @intro = :projects_intro
+ 
+  slim :projects
+end
+
 get '/feed' do
   static archive.last.published_at.to_s
   builder :rss
@@ -97,14 +106,6 @@ get "/stylesheet.css" do
   static
   content_type 'text/css', :charset => 'utf-8'
   sass :"stylesheets/application"
-end
-
-get "/projects" do
-  static
-  @nav = navigate('projects')
-  @title = "My projects and wips"
-  @intro = :projects_intro
-  slim :projects
 end
 
 not_found do

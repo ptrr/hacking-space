@@ -1,8 +1,8 @@
-#!/bin/zsh
-./script/test
-result=$?
-if [[ $result -ne 0 ]]; then
-  echo
-  echo "Tests failed with status $result. Not letting you commit."
-  # exit $result
-fi
+# #!/bin/zsh
+# ./script/test
+# result=$?
+# if [[ $result -ne 0 ]]; then
+#   echo
+#   echo "Tests failed with status $result. Not letting you commit."
+#   # exit $result
+# fi

@@ -1,7 +1,7 @@
 #navi
   - unless @nav.prev.nil? 
     a.prev href="/#{@nav.prev}" 
-      =@nav.prev.capitalize
+      =@nav.prev.gsub("-", " ").capitalize 
   - unless @nav.next.nil? 
     a.next href="/#{@nav.next}"
-      =@nav.next.gsub("-", " ").capitalize 
+      =@nav.next.gsub("-", " ").capitalize
