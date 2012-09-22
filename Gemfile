@@ -6,6 +6,7 @@ gem 'slim'
 gem 'builder'
 gem 'sass', '>= 3.2.0.alpha.237'
 gem 'compass'
+gem 'capistrano'
 
 group :development do
   gem 'shotgun'
