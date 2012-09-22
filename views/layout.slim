@@ -3,17 +3,22 @@ html
 
   head
 
-    title= @title || 'This is who I am'
+    title
+      = @title || 'This is who I am'
 
     meta charset='UTF-8'
+    meta name='author'      content="Peter"
     meta name='description' content=@description
     meta name='viewport'    content='width=device-width, initial-scale=1.0'
 
     link rel='stylesheet'    href='/stylesheet.css' 
     link rel='shortcut icon' href='/favicon.png'    
     link rel='alternate'     href='/feed' type='application/rss+xml' title='RSS Feed'
+    
     link href='http://fonts.googleapis.com/css?family=Alike|Open+Sans' rel='stylesheet' type='text/css'
-    script type="text/javascript" src="//use.typekit.net/atd2wka.js"
+    
+    script type="text/javascript" src="http://use.typekit.net/atd2wka.js"
+
     == erb :_header_javascripts
 
     /[if lt IE 9]

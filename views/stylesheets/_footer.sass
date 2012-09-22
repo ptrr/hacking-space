@@ -24,12 +24,27 @@
         text-align: center
 
 +small-screen
+  
   footer
+    background: $black
+    min-height: 20px
+    clear: both
+    color: white
+    .sitemap
+      padding: $big-gap
+      font-family: $serif
+      text-align: center
+      text-transform: uppercase
+      a
+        +link-colors(white, $red)
+        +hover-link
 
     .copyright
-      font-size: 14px
-      text-align: center
+      width: 100%
       p
-        color: white
-        font-family: $sans
+        font-size: 1em
+        font-family: $serif
         text-transform: uppercase
+        color: white
+        +embossed
+        text-align: center

@@ -32,7 +32,7 @@ before do
   no_www!
   no_dates!
   no_trailing_slashes!
-  @description = "This is a blog of all things cool. You know. ;)"
+  @description = "This is where I write"
 end
 
 get '/' do
