@@ -19,7 +19,7 @@ body
   display: inline-block
   position: relative
   z-index: 1
-  background-color: #FDFDFD
+  background-color: $light-gray
   text-decoration: none
   padding: 0 10px
 
@@ -49,7 +49,7 @@ h2
   line-height: 1.5em
   margin: 0 0 $small-gap 0
   a
-    +link-colors($black, $red)
+    +link-colors($black, $blue)
 
 h3
   font-size: 20px
@@ -57,7 +57,7 @@ h3
   text-align: center
   margin: 0 0 $small-gap 0
   a
-    +link-colors($black, $red)
+    +link-colors($black, $blue)
 
 h1, h2, h3, h4, h5, h6
   margin: 1.5em 0 0.5em 0
@@ -68,15 +68,15 @@ h1, h2, h3, h4, h5, h6
 p
   color: $black
   margin: 0 0 0.5em 0
-  font-size: 1.3em
+  font-size: 1.1em
   line-height: 1.8em
   text-align: justify
-  font-family: $serif
+  font-family: $sans
   a
     text-decoration: underline
 
 a
-  +link-colors($black, $red)
+  +link-colors($black, $blue)
   +hover-link
 
 strong
