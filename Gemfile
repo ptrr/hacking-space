@@ -10,7 +10,6 @@ gem 'capistrano'
 
 group :development do
   gem 'shotgun'
-  gem 'heroku'
 
   # compiling articles
   gem 'redcarpet'
